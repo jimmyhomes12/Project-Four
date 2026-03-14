@@ -175,12 +175,68 @@ Create 4 KPI card blocks using merged cells and borders:
 
 ---
 
-## Step 8 – Final Polish
+## Step 8 – KPI Card Formatting
+
+Use one row of big, modern-looking KPI cards across the top of the Dashboard sheet.
+
+### Layout
+
+Merge small ranges for each card, for example:
+
+| Card | Merged range | Metric |
+|------|-------------|--------|
+| Card 1 | `B2:D4` | Total Revenue |
+| Card 2 | `F2:H4` | Gross Margin % |
+| Card 3 | `J2:L4` | Total Transactions |
+| Card 4 | `N2:P4` | Avg Order Value |
+
+In each merged area add two lines:
+
+- **Line 1 (label):** e.g. `"Total Revenue"` – static text or small label cell above.
+- **Line 2 (value):** link to the `KPI_Calc` sheet (e.g. `=KPI_Calc!B7`).
+
+### Number Formats
+
+| Metric | Custom format |
+|--------|--------------|
+| Revenue / AOV | `"$"#,##0,,"M"` for millions (e.g. $5M) or `"$"#,##0` for exact values |
+| Gross Margin % | `0.0%` |
+| Total Transactions | `#,##0` (no decimals) |
+
+### Fonts and Alignment
+
+- Use one modern font throughout: **Segoe UI**, **Calibri**, or **Arial**.
+- Label (line 1): 10–11 pt, bold, gray color.
+- Value (line 2): 18–24 pt, bold, darker color.
+- Center both horizontally and vertically: **Home → Alignment → Center / Middle Align**.
+
+### Card Colors
+
+- Fill: light, muted colors (e.g. light gray `#F2F2F2` or light blue `#DDEEFF`), consistent across all cards.
+- Border: thin, slightly darker gray.
+- Optional accent: give the highest-priority card (Total Revenue) a slightly stronger fill color.
+
+### YoY Growth Arrow (optional "smart" touch)
+
+1. In `KPI_Calc`, compute YoY Growth % for 2025 vs 2024:  
+   `=(Revenue_2025 - Revenue_2024) / Revenue_2024`
+2. On the Dashboard, next to the Revenue card, add a small cell referencing that formula (e.g. `=KPI_Calc!B5`).
+3. Apply **Conditional Formatting → Icon Sets → 3 Arrows**:
+   - ≥ 0 → green up arrow
+   - < 0 → red down arrow
+4. Format the cell as `0.0%` to show the percentage alongside the icon.
+
+This produces Power BI-style KPI cards inside Excel.
+
+---
+
+## Step 9 – Final Polish
 
 - Apply a consistent colour theme: **Page Layout → Themes** (e.g., *Office* or *Facet*).
+- Add a dark header cell at the top: **"Retail Sales Performance Dashboard (2023–2025)"** – large merged cell, white text, dark fill.
 - Hide gridlines on the Dashboard sheet: **View → uncheck Gridlines**.
 - Lock the Dashboard sheet: **Review → Protect Sheet** (allow only selecting cells).
-- Add a header row with the project title using WordArt or a large merged cell.
+- Place slicers on the **left side** (Year, Channel) and **top-right** (Region, Category) of the dashboard.
 
 ---
 
