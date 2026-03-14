@@ -30,6 +30,7 @@ Project-Four/
 
 **File:** `data/cleaned/retail_sales_2023_2025_clean.xlsx`  
 **Rows:** Transaction-level records across multiple years  
+**Source:** <a href="https://www.kaggle.com/datasets/rafliprasetyo/retail-sales-dataset-from-2023-to-2025">Retail Sales Dataset from 2023 to 2025</a> by `rafliprasetyo` on Kaggle.  
 
 | Field | Detail |
 |-------|--------|
@@ -146,12 +147,13 @@ For a detailed step-by-step walkthrough, see **[docs/EXCEL_DASHBOARD_SETUP.md](d
 
 ---
 
-## 💡 Key Insights (Sample)
+## Key Insights
 
-- **Online channel** accounts for ~55% of all transactions across all years.
-- Revenue shows a clear **Q4 seasonal spike** (Nov–Dec) every year.
-- **YoY growth ~12% (2023→2024) and ~7% (2024→2025)** reflecting healthy but moderating growth.
-- **Electronics** is the highest-revenue category; **Sports & Fitness** shows the strongest per-unit margin.
+- **Revenue concentration:** A small subset of product categories accounts for a disproportionately large share of total revenue (an 80/20 pattern), indicating that focusing merchandising and inventory decisions on these top categories can drive the biggest financial impact.
+
+- **Seasonality:** Monthly sales exhibit clear seasonal peaks across the 2023–2025 period, with higher average order values during peak months. This pattern can inform staffing plans, promotional timing, and inventory replenishment cycles.
+
+- **Pricing vs. volume tradeoff:** Higher-priced categories generate more revenue per transaction but lower unit volume, while low-priced essentials dominate total quantity sold. This suggests using margin optimization strategies for premium categories and efficiency/throughput strategies for high-volume staples.
 
 ---
 
