@@ -2,6 +2,8 @@
 
 This project builds an interactive Excel BI dashboard on top of a multi-year retail sales dataset (2023–2025). It showcases how Excel can be used as a lightweight BI tool to monitor revenue, profitability, and channel performance for a retail business.
 
+📥 **Download the dashboard:** [excel_dashboard/Retail_Sales_KPI_Dashboard.xlsx](excel_dashboard/Retail_Sales_KPI_Dashboard.xlsx)
+
 ---
 
 ## 📁 Folder Structure
@@ -160,10 +162,10 @@ For a detailed step-by-step walkthrough, see **[docs/EXCEL_DASHBOARD_SETUP.md](d
 ## 🛠 Tools Used
 
 - **Microsoft Excel** – Power Query, PivotTables, PivotCharts, Slicers, GETPIVOTDATA
-- **Python** – synthetic dataset generation (`data/raw/retail_sales_2023_2025.csv`)
+- **Python** – used for light preprocessing / exploration (optional)
 
 ---
 
 ## 📄 License
 
-This project uses a synthetic dataset generated for portfolio and educational purposes.
+This project uses the 'Retail Sales Dataset from 2023 to 2025' from Kaggle for educational and portfolio purposes.
